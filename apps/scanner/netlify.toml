@@ -1,0 +1,11 @@
+[build]
+  command = "pnpm install && pnpm --filter @venue-flow/scanner build"
+  publish = "apps/scanner/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

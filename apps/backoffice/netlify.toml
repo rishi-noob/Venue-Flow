@@ -1,0 +1,11 @@
+[build]
+  command = "pnpm install && pnpm --filter @venue-flow/backoffice build"
+  publish = "apps/backoffice/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

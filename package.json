@@ -1,0 +1,22 @@
+{
+  "name": "venue-flow",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Russian House Event Attendance System — QR-based check-in",
+  "scripts": {
+    "dev": "pnpm --parallel -r dev",
+    "dev:api": "pnpm --filter @venue-flow/api dev",
+    "dev:backoffice": "pnpm --filter @venue-flow/backoffice dev",
+    "dev:scanner": "pnpm --filter @venue-flow/scanner dev",
+    "build": "pnpm -r build",
+    "db:generate": "pnpm --filter @venue-flow/db generate",
+    "db:migrate": "pnpm --filter @venue-flow/db migrate",
+    "db:push": "pnpm --filter @venue-flow/db push",
+    "db:seed": "pnpm --filter @venue-flow/db seed",
+    "db:studio": "pnpm --filter @venue-flow/db studio"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
